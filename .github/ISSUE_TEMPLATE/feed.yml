@@ -1,0 +1,15 @@
+name: 🍊 Nib'yu besle
+description: Nib'ya bir atıştırmalık bırak.
+title: "nib:feed"
+labels: ["nib", "snack"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🍊 Nib aç görünüyor\nIssue'yu gönder; Nib atıştırmalığını alıp sana teşekkür edecek."
+  - type: dropdown
+    id: snack
+    attributes:
+      label: Ne getirdin?
+      options: ["Sulu bir portakal", "Hafif şüpheli pizza", "Binary kurabiye", "Sihirli mantar (belki)"]
+    validations:
+      required: true

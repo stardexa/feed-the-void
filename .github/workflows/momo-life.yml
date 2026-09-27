@@ -1,0 +1,36 @@
+name: Nib Life Cycle
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nib-state
+  cancel-in-progress: false
+
+jobs:
+  decay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Let time pass for Nib
+        run: node scripts/decay.js
+      - name: Save Nib's new mood when it changed
+        run: |
+          git config user.name "nib-bot[bot]"
+          git config user.email "nib-bot[bot]@users.noreply.github.com"
+          git add README.md data/state.json assets/nib.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: Nib lived another moment"
+          git pull --rebase origin main
+          git push origin HEAD:main

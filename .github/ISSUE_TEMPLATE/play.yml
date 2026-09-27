@@ -1,0 +1,15 @@
+name: 🪀 Nib'yla oyna
+description: Nib'nun neşesini yükselt.
+title: "nib:play"
+labels: ["nib", "playtime"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🪀 Nib oyun istiyor\nIssue'yu gönder; Nib bunu bir macera sayacak."
+  - type: dropdown
+    id: game
+    attributes:
+      label: Hangi oyun?
+      options: ["Koridor yarışı", "Bug kovalamaca", "Yastık kalesi", "Yasaklı lazer pointer"]
+    validations:
+      required: true

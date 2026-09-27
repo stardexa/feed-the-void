@@ -1,0 +1,15 @@
+name: 🌙 Nib'yu uyut
+description: Nib'ya hak ettiği küçük uykuyu ver.
+title: "nib:sleep"
+labels: ["nib", "sleepy"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🌙 Şşşt\nIssue'yu gönder; Nib battaniyesine kıvrılacak."
+  - type: input
+    id: bedtime_story
+    attributes:
+      label: Nib'ya tek cümlelik iyi geceler hikâyesi
+      placeholder: Bir varmış, bir yokmuş, CI ilk seferde geçmiş...
+    validations:
+      required: false

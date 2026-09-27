@@ -1,0 +1,33 @@
+{
+  "pet": {
+    "name": "Nib",
+    "level": 1,
+    "hunger": 96,
+    "happiness": 87,
+    "energy": 75,
+    "status": "SUPER_HAPPY",
+    "last_updated": "2026-09-27T13:00:57.024Z",
+    "version": 2
+  },
+  "leaderboard": {
+    "stardexa": {
+      "feed": 1,
+      "play": 0,
+      "sleep": 0,
+      "total": 1
+    }
+  },
+  "cooldowns": {
+    "stardexa:feed": "2026-09-27T13:00:57.024Z"
+  },
+  "recent_events": [
+    {
+      "at": "2026-09-27T13:00:57.024Z",
+      "message": "@stardexa Momo lezzetli bir atıştırmalık kaptı. 🍊"
+    },
+    {
+      "at": "2026-09-27T12:55:00.000Z",
+      "message": "Momo profilin çatısına yerleşti. İlk atıştırmalığını bekliyor. 🍊"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="390" viewBox="0 0 720 390" role="img" aria-label="Momo is aşırı mutlu">
+  <style>
+    .float { animation: float 2.8s ease-in-out infinite; transform-origin: 260px 250px; }
+    .blink { animation: blink 5s step-end infinite; transform-origin: center; }
+    .tear { animation: drip 1.4s ease-in infinite; } .zzz { animation: drift 2.4s ease-in-out infinite; }
+    @keyframes float { 50% { transform: translateY(-7px); } } @keyframes blink { 96% { transform: scaleY(.08); } }
+    @keyframes drip { to { transform: translateY(12px); opacity: 0; } } @keyframes drift { 50% { transform: translate(8px,-9px); opacity: .35; } }
+  </style>
+  <rect width="720" height="390" rx="28" fill="#12162f"/>
+  <circle cx="93" cy="75" r="2" fill="#f8bd75"/><circle cx="641" cy="100" r="3" fill="#a9f1d1"/><circle cx="575" cy="310" r="2" fill="#f8bd75"/><path d="M0 334C160 282 196 380 370 332s237 4 350-43v101H0z" fill="#1e2450"/>
+  <g class="float">
+    <path d="M132 245c0-86 52-145 128-145s128 59 128 145c0 76-45 111-128 111s-128-35-128-111z" fill="#9cf5d0" stroke="#090d25" stroke-width="8"/>
+    <path d="M160 142l-16-55 55 25m124 0 55-25-16 55" fill="#9cf5d0" stroke="#090d25" stroke-width="8" stroke-linejoin="round"/>
+    <ellipse class="blink" cx="216" cy="228" rx="21" ry="29" fill="#11142e"/><ellipse class="blink" cx="305" cy="228" rx="21" ry="29" fill="#11142e"/>
+    <circle cx="221" cy="219" r="7" fill="#fff6d9"/><circle cx="310" cy="219" r="7" fill="#fff6d9"/>
+    <path d="M242 274q18 14 36 0" fill="none" stroke="#11142e" stroke-width="7" stroke-linecap="round"/>
+    <path d="M175 326q-13 26-33 21m199-21q13 26 33 21" fill="none" stroke="#090d25" stroke-width="12" stroke-linecap="round"/>
+    
+  </g>
+  <text x="332" y="80" fill="#f7f4ff" font-size="33" font-family="ui-rounded, system-ui, sans-serif" font-weight="700">Momo · Lv. 1</text>
+  <text x="332" y="111" fill="#9cf5d0" font-size="17" font-family="ui-monospace, monospace">◕‿◕  aşırı mutlu</text>
+  <text x="332" y="162" fill="#dfe4ff" font-size="14" font-family="ui-monospace, monospace">TOKLUK  96%</text><rect x="332" y="172" width="270" height="10" rx="5" fill="#2b315c"/><rect x="332" y="172" width="259.2" height="10" rx="5" fill="#ff985d"/>
+  <text x="332" y="218" fill="#dfe4ff" font-size="14" font-family="ui-monospace, monospace">NEŞE  87%</text><rect x="332" y="228" width="270" height="10" rx="5" fill="#2b315c"/><rect x="332" y="228" width="234.9" height="10" rx="5" fill="#a9f1d1"/>
+  <text x="332" y="274" fill="#dfe4ff" font-size="14" font-family="ui-monospace, monospace">ENERJI  75%</text><rect x="332" y="284" width="270" height="10" rx="5" fill="#2b315c"/><rect x="332" y="284" width="202.5" height="10" rx="5" fill="#a99aff"/>
+  <text x="332" y="337" fill="#98a0c5" font-size="13" font-family="ui-monospace, monospace">Bugün kodu değil, atmosferi compile ediyor.</text>
+  <text x="332" y="362" fill="#5d6694" font-size="11" font-family="ui-monospace, monospace">alive via GitHub Issues · v2</text>
+</svg>
