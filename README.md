@@ -42,7 +42,7 @@ Voidkeepers earn a title from how they care: **Snack Engineer**, **Chaos QA**, *
 <!-- NIB:LEADERBOARD:START -->
 | Rank | Voidkeeper | Title | Snacks | Play | Total |
 | :--: | :-- | :-- | :--: | :--: | :--: |
-| 🥇 | [@stardexa](https://github.com/stardexa) | 🍊 Snack Engineer | 2 | 0 | 2 💖 |
+| 🥇 | [@stardexa](https://github.com/stardexa) | ✨ Junior Voidkeeper | 2 | 1 | 3 💖 |
 <!-- NIB:LEADERBOARD:END -->
 
 <sub>This table is regenerated automatically whenever Nib receives care.</sub>

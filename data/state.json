@@ -2,25 +2,30 @@
   "pet": {
     "name": "Nib",
     "level": 1,
-    "hunger": 100,
-    "happiness": 91,
-    "energy": 77,
+    "hunger": 80,
+    "happiness": 100,
+    "energy": 65,
     "status": "SUPER_HAPPY",
-    "last_updated": "2026-09-27T13:15:14.836Z",
-    "version": 3
+    "last_updated": "2026-09-27T16:22:40.265Z",
+    "version": 4
   },
   "leaderboard": {
     "stardexa": {
       "feed": 2,
-      "play": 0,
+      "play": 1,
       "sleep": 0,
-      "total": 2
+      "total": 3
     }
   },
   "cooldowns": {
-    "stardexa:feed": "2026-09-27T13:15:14.836Z"
+    "stardexa:feed": "2026-09-27T13:15:14.836Z",
+    "stardexa:play": "2026-09-27T16:22:40.265Z"
   },
   "recent_events": [
+    {
+      "at": "2026-09-27T16:22:40.265Z",
+      "message": "@stardexa Nib ile vahşi bir koridor yarışı yaptı. 🪀"
+    },
     {
       "at": "2026-09-27T13:15:14.836Z",
       "message": "@stardexa Nib lezzetli bir atıştırmalık kaptı. 🍊"
