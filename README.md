@@ -42,3 +42,5 @@ GitHub Issues become care actions. GitHub Actions own the state machine. An anim
 </details>
 
 <!-- tiny badge hunt breadcrumb -->
+
+<!-- void constellation aligned -->
