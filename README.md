@@ -37,6 +37,14 @@ Every interaction adds **Bits** to the collective hoard. At milestones, Nib evol
 
 Voidkeepers earn a title from how they care: **Snack Engineer**, **Chaos QA**, **DreamOps**, or **Void Maintainer**.
 
+### Current Voidkeepers
+
+| Rank | Voidkeeper | Title | Snacks | Play | Total |
+| :--: | :-- | :-- | :--: | :--: | :--: |
+| 🥇 | [@stardexa](https://github.com/stardexa) | 🍊 Snack Engineer | 2 | 0 | 2 💖 |
+
+<sub>This table is regenerated automatically whenever Nib receives care.</sub>
+
 ### The project
 
 Feed the Void is a zero-hosting GitHub experiment built from Issues, Actions, JSON state, and generated art. The room is Nib's habitat; the issue tracker is the pantry.

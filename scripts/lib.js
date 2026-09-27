@@ -134,9 +134,18 @@ function renderSvg(state) {
 
 function leaderboardRows(state) {
   const entries = Object.entries(state.leaderboard).sort(([, a], [, b]) => b.total - a.total || b.feed - a.feed).slice(0, 5);
-  if (!entries.length) return '| ✨ | İlk bakıcı sensin | — | — | — |';
+  if (!entries.length) return '| ✨ | You could be first | — | — | — | — |';
   const medals = ['🥇', '🥈', '🥉', '4.', '5.'];
-  return entries.map(([user, score], index) => `| ${medals[index]} | [@${escapeMarkdown(user)}](https://github.com/${encodeURIComponent(user)}) | ${score.feed} | ${score.play} | ${score.total} 💖 |`).join('\n');
+  return entries.map(([user, score], index) => `| ${medals[index]} | [@${escapeMarkdown(user)}](https://github.com/${encodeURIComponent(user)}) | ${roleFor(score)} | ${score.feed} | ${score.play} | ${score.total} 💖 |`).join('\n');
+}
+
+function roleFor(score) {
+  const { feed = 0, play = 0, sleep = 0, total = 0 } = score;
+  if (total >= 12 && Math.max(feed, play, sleep) - Math.min(feed, play, sleep) <= 2) return '🌌 Void Maintainer';
+  if (feed >= play + 2 && feed >= sleep + 2) return '🍊 Snack Engineer';
+  if (play >= feed + 2 && play >= sleep + 2) return '🪀 Chaos QA';
+  if (sleep >= feed + 2 && sleep >= play + 2) return '🌙 DreamOps';
+  return '✨ Junior Voidkeeper';
 }
 
 function renderReadmeBlock(state) {
@@ -164,8 +173,8 @@ function renderReadmeBlock(state) {
 
 #### 🏆 Nib'nun en sevdiği bakıcılar
 
-| Sıra | Bakıcı | Besleme | Oyun | Toplam |
-| :--: | :-- | :--: | :--: | :--: |
+| Rank | Voidkeeper | Title | Snacks | Play | Total |
+| :--: | :-- | :-- | :--: | :--: | :--: |
 ${leaderboardRows(state)}
 
 <sub>Son olay: ${escapeMarkdown(event)}</sub>
@@ -183,4 +192,4 @@ function updateReadme(state) {
 }
 
 function renderAll(state) { fs.writeFileSync(SVG_PATH, renderSvg(state)); updateReadme(state); }
-module.exports = { ACTIONS, ROOT, STATE_PATH, SVG_PATH, README_PATH, actionFromTitle, applyDecay, interact, loadState, mood, renderAll, saveState, statusFor };
+module.exports = { ACTIONS, ROOT, STATE_PATH, SVG_PATH, README_PATH, actionFromTitle, applyDecay, interact, loadState, mood, renderAll, roleFor, saveState, statusFor };
