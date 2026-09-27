@@ -183,11 +183,19 @@ ${leaderboardRows(state)}
 <!-- NIB:END -->`;
 }
 
+function renderLeaderboardBlock(state) {
+  return `<!-- NIB:LEADERBOARD:START -->
+| Rank | Voidkeeper | Title | Snacks | Play | Total |
+| :--: | :-- | :-- | :--: | :--: | :--: |
+${leaderboardRows(state)}
+<!-- NIB:LEADERBOARD:END -->`;
+}
+
 function updateReadme(state) {
-  const block = renderReadmeBlock(state);
+  const block = renderLeaderboardBlock(state);
   const readme = fs.readFileSync(README_PATH, 'utf8');
-  const next = readme.replace(/<!-- NIB:START -->[\s\S]*<!-- NIB:END -->/, block);
-  if (next === readme) throw new Error('README içinde NIB işaretçileri bulunamadı.');
+  const next = readme.replace(/<!-- NIB:LEADERBOARD:START -->[\s\S]*<!-- NIB:LEADERBOARD:END -->/, block);
+  if (next === readme) throw new Error('README içinde NIB leaderboard işaretçileri bulunamadı.');
   fs.writeFileSync(README_PATH, next);
 }
 
