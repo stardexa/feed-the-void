@@ -40,3 +40,5 @@
 GitHub Issues become care actions. GitHub Actions own the state machine. An animated SVG turns Nib's current activity into a scene in the Void Nook. No server or database required.
 
 </details>
+
+<!-- tiny badge hunt breadcrumb -->
